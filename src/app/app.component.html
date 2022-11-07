@@ -1,0 +1,72 @@
+<div class="slide-slow">
+      <ul >
+          <li>
+              <i class="slide-slow"></i> 20% off Entire Purchase Promo code: offT80
+          </li>
+        
+          <li>
+              <i class="fab fa-opencart"></i> Off 50%! Shop Now
+          </li>
+          <li>
+              <i class="fab fa-opencart"></i> Off 10%! Shop Cheese
+          </li>
+       
+          <li>
+              <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT30
+          </li>
+          <li>
+              <i class="fab fa-opencart"></i> Off 50%! Shop Now 
+          </li>
+      </ul>
+  </div>
+<div id="app">
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+  
+      <p>Cheeses Palace</a><div class="image">
+      </div>
+    
+    <ul class="navbar-nav mr-auto" routerLinkActive="active">
+      <li  routerLinkActive="active"[routerLinkActiveOptions]="{exact:true}"  >
+        <a class="nav-link" routerLink="/home" >Home </a>
+      </li>
+      <li class="nav-item">
+        <a href="/about" class="nav-link" routerLink="about">About Us</a>
+      </li>
+
+      <li class="nav-item" *ngIf="showAdminBoard">
+        <a href="/admin" class="nav-link" routerLink="admin">Admin Board</a>
+      </li>
+      <li class="nav-item" *ngIf="showModeratorBoard">
+        <a href="/mod" class="nav-link" routerLink="mod">Moderator Board</a>
+      </li>
+      <li class="nav-item">
+        <a href="/profile" class="nav-link" *ngIf="isLoggedIn" routerLink="profile">User {{ username }}</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
+      <li class="nav-item">
+        <a href="/register" class="nav-link" routerLink="register">Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a href="/login" class="nav-link" routerLink="login">Login</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+      <li class="nav-item">
+        <a href="/profile" class="nav-link" routerLink="profile">{{ username }}</a>
+      </li>
+      <li routerLinkActive="active"  >
+        <a class="nav-link"  routerLink="/cheese">Cheeses</a>
+      </li>
+      <li class="nav-item">
+        <a href class="nav-link" (click)="logout()">LogOut</a>
+      </li>
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
+
+<app-footer></app-footer>
+  </div>

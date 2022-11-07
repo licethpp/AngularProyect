@@ -1,0 +1,24 @@
+
+    .image{
+        height:40em; background-size:cover; 
+        background-image:url('../Imagen/pexels-alexy-almond-3756498.jpg');
+        background-position:50% 50%;
+        width: 100%;
+        
+        
+      }
+      h3{
+        text-align: center;
+
+       color: whitesmoke;      
+       text-align: center;
+        font: 1em sans-serif;
+        font-weight: 100;
+        font-size: 60px;
+    }
+    
+    
+      .container {
+        display: flex;
+        justify-content: center;
+    }

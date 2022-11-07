@@ -1,0 +1,50 @@
+<button type="button" class="btn btn-primary"  routerLink="/cheese" > Back to Cheese</button>
+<h5>Add New Cheese</h5>
+
+<br>
+<div>
+    <div class="submit-form">
+      <div *ngIf="!submitted">
+       
+        <div class="form-group">
+          <label for="description">Naam</label>
+          <input
+            class="form-control"
+            id="naam"
+            required
+            [(ngModel)]="cheese.naam"
+            name="naam"
+          />
+        </div>
+        <div class="form-group">
+            <label for="description">Smaak</label>
+            <input
+              class="form-control"
+              id="smaak"
+              required
+              [(ngModel)]="cheese.smaak"
+              name="smaak"
+            />
+          </div>
+          <div class="form-group">
+            <label for="description">Soort</label>
+            <input
+              class="form-control"
+              id="soort"
+              required
+              [(ngModel)]="cheese.soort"
+              name="soort"
+            />
+          </div>
+  
+<br>
+
+        <button (click)="saveCheese()" class="btn btn-success">Submit</button>
+      </div>
+ <br>
+      <div *ngIf="submitted">
+        <h4>Cheese was submitted successfully!</h4>
+        <button class="btn btn-success" (click)="newCheese()">Add</button>
+      </div>
+    </div>
+  </div>

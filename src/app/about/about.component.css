@@ -1,0 +1,24 @@
+
+.image{
+background-image:url('../Imagen/pexels-pixabay-273214.jpg');  
+width: 300%;
+height:33em; background-size:cover; 
+float: left;
+margin-right: 15px;
+border-radius: 3px;
+  }
+
+  .about-section{
+    float: right;
+    margin-right: 15px;
+    align-items: center;
+
+ }
+    
+ .container {
+    display: flex;
+    justify-content: center;
+}
+p{
+    font-size: 23px;
+}
