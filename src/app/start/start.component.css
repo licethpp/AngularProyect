@@ -1,0 +1,141 @@
+
+      h3{
+        text-align: center;
+
+       color: whitesmoke;      
+       text-align: center;
+        font: 1em sans-serif;
+        font-weight: 100;
+        font-size: 60px;
+    }
+    .h1{
+      text-align: center;
+      color: whitesmoke;      
+      text-align: center;
+       font: 1em sans-serif;
+       font-weight: 100;
+       font-size: 60px;  
+    }
+    h4{text-align: center;}
+    #referencia{
+      align-items: center;
+      text-align: center;
+    }
+      .container {
+        display: flex;
+        justify-content: center;
+        padding: 0px; /* switched from default (flex-start, see below) */
+
+    }
+    /* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #04AA6D;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 980px) {
+  .navbar a {
+    float: none;
+    display: block;
+
+  }
+
+}
+.jumbotron{
+  background-color: whitesmoke;
+  font-weight: 100%;
+  height: auto;
+  align-items: center;
+  font: 1.5em sans-serif;
+  padding: 2px; /* switched from default (flex-start, see below) */
+
+}
+#button{
+  width: 30px;
+  height: auto;
+}
+.cardContenedor{
+  align-items: center;
+}
+.card-img-top{
+  height:16em; background-size:cover; 
+  background-image:url('../Imagen/vendedor.jpg');
+  width: 100%;
+  align-items: center;
+}
+.card-img-top1{
+  height:16em; background-size:cover; 
+  background-image:url('../Imagen/vendedor1.jfif');
+  width: 100%;
+}
+.card-img-top2{
+  height:16em; background-size:cover; 
+  background-image:url('../Imagen/vendedor2.jpg');
+  width: 100%;
+}
+.card-img-top3{
+  height:16em; background-size:cover; 
+  background-image:url('../Imagen/vendedor3.jpg');
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .rounded-lg-3 { border-radius: .3rem; }
+}
+.imagenUno{
+  background-image:url('../Imagen/sandy-millar-vS-w_K0soZE-unsplash.jpg');
+  height:30em; background-size:cover; 
+width: 700px;
+margin-top: 0px;
+}
+.imagenDos {
+  background-image:url('../Imagen/alexas_fotos-DmuqS6KTf6M-unsplash.jpg');
+  height:30em; background-size:cover; 
+  width: 700px;
+overflow: hidden;
+
+
+}
+.imagenTres{
+  background-image:url('../Imagen/waldemar-brandt-kPqaqug998Y-unsplash.jpg');
+  height:30em; background-size:cover; 
+  width: 700px;
+
+}
+.imagenCuatro{
+  background-image:url('../Imagen/siami-tan-ZG9wzHhMM2M-unsplash.jpg');
+  height:30em; background-size:cover; 
+  width:100%;
+}
+.imagenCinco{
+  background-image:url('../Imagen/xavier-von-erlach-AU2goNvfyWU-unsplash.jpg');
+  height:30em; background-size:cover; 
+  width:100%;
+}
+.imagenTop{
+  background-image:url('../Imagen/jez-timms-GhfkRvlXK8c-unsplash.jpg');
+  height:30em; background-size:cover; 
+  width:120%;
+}
+

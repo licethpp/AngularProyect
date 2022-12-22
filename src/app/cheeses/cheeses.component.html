@@ -1,0 +1,78 @@
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{{modalTitle}}</h5>
+          <button type="button" class="btn-close" (click)="closeClick()" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        </div>
+        
+            <div class="modal-body">
+                <app-edit [cheese]="cheese" *ngIf="activateAddEditStuCom">
+                </app-edit>
+                
+              </div>
+              
+     
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"  data-bs-target="#exampleModal"  >Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<a class="btn btn-primary  " routerLink="/add">Add New Cheese</a>   
+
+<h3>Cheeses</h3>
+<div class="alert alert-success" *ngIf="isSuccessful "> <h4>
+  was Delete successfully!
+  </h4> 
+  
+</div> 
+<br>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+          <th>ID</th>
+          <th>Naam</th>
+          <th>soort</th>
+          <th>smaak</th>
+          <th>price</th>
+
+          
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dataItem of cheesList">
+        <td>{{dataItem.id}}</td>
+        <td>{{dataItem.naam}}</td>
+        <td>{{dataItem.soort}}</td>
+        <td>{{dataItem.smaak}}</td>
+        <td>{{dataItem.price}}$</td>
+
+
+
+        <td>
+          
+          <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="EditCheese(dataItem)">Edit</button>
+            
+            
+           
+          
+          
+           
+ <button type="button" class="btn btn-danger deleteRow"    (click)="deleteChese(dataItem.id)">Delete </button>  
+          
+        
+            <button type="button" class="btn btn-info"  routerLink="/detail/{{ dataItem.id }}" (click)="getdetail"> Detail</button> 
+        </td>
+      </tr>
+    </tbody>
+  </table>

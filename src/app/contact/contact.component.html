@@ -1,0 +1,203 @@
+
+<!--  <div class="row ">
+  <div  class="col-md-3 mb-md-0 mb-3 ">
+    <form
+      *ngIf="!isSuccessful"
+      name="form"
+      (ngSubmit)="f.form.valid && onSubmit()"
+      #f="ngForm"
+      novalidate
+    >
+
+      <div class="form-group ">
+        <label for="username">Your Name</label>
+        <input
+          type="text"
+          class="form-control"
+          name="username"
+          [(ngModel)]="form.username"
+          required
+          minlength="3"
+          maxlength="20"
+          #username="ngModel"
+        />
+
+             
+
+        <div class="alert-danger" *ngIf="username.errors && f.submitted">
+          <div *ngIf="username.errors">Username is required</div>
+          <div *ngIf="username.errors">
+              Username must be at least 3 characters
+          </div>
+          <div *ngIf="username.errors">
+            Username must be at most 20 characters
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email Address</label>
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          [(ngModel)]="form.email"
+          required
+          email
+          #email="ngModel"
+        />
+        <div class="alert-danger" *ngIf="email.errors && f.submitted">
+          <div *ngIf="email.errors">Email is required</div>
+          <div *ngIf="email.errors">
+            Email must be a valid email address
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+      <label for="Comment">Your Menssage</label>
+     <textarea
+      id=""
+      cols="15" rows="5"
+      type="Comment"
+     class="form-control"
+      name="Comment"
+      [(ngModel)]="form.Comment"
+      required
+       minlength="20">
+     </textarea>
+     <div class="form-group">
+      <br>
+      <button class="btn btn-info btn-block">Send</button>
+     </div>
+      </div>
+      <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
+       failed!<br />{{ errorMessage }}
+      </div>
+   
+    </form>
+
+    <div class="alert alert-success" *ngIf="isSuccessful">
+      Your message has been sent thank you for contacting us!
+    </div>
+
+  </div>
+</div>      -->
+
+
+
+
+ 
+  <!--Section heading-->
+  <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+  <!--Section description-->
+  <h6 class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+      a matter of hours to help you.</h6>
+
+
+ <div class="contenedor">
+  <div  class="col-md-3 mb-md-0 mb-3 ">
+    <form
+      *ngIf="!isSuccessful"
+      name="form"
+      (ngSubmit)="f.form.valid && onSubmit()"
+      #f="ngForm"
+      novalidate
+    >
+
+      <div class="form-group ">
+        <label for="username">Your Name</label>
+        <input
+          type="text"
+          class="form-control"
+          name="username"
+          [(ngModel)]="form.username"
+          required
+          minlength="3"
+          maxlength="20"
+          #username="ngModel"
+        />
+
+             
+
+        <div class="alert-danger" *ngIf="username.errors && f.submitted">
+          <div *ngIf="username.errors">Username is required</div>
+         
+          <div *ngIf="username.errors">
+            Username must be at most 20 characters
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email Address</label>
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          [(ngModel)]="form.email"
+          required
+          email
+          #email="ngModel"
+        />
+        <div class="alert-danger" *ngIf="email.errors && f.submitted">
+          <div *ngIf="email.errors">Email is required</div>
+          <div *ngIf="email.errors">
+            Email must be a valid email address
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+      <label for="Comment">Your Menssage</label>
+     <textarea
+      id=""
+      cols="15" rows="5"
+      type="Comment"
+     class="form-control"
+      name="Comment"
+      [(ngModel)]="form.Comment"
+      required
+       minlength="20">
+     </textarea>
+     <div class="form-group">
+      <br>
+      <button class="btn btn-info btn-block">Send</button>
+     </div>
+      </div>
+      <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
+       failed!<br />{{ errorMessage }}
+      </div>
+   
+    </form>
+
+    <div class="alert alert-success" *ngIf="isSuccessful">
+      Your message has been sent thank you for contacting us!
+    </div>
+    
+  </div>
+
+
+
+      <!--Grid column-->
+      <div class="col-md-3 text-center " >
+          <ul class="list-unstyled ">
+              <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                <p class="mb-0">14 koppenhollestraat</p>
+                <p class="mb-0">Belgium, 9500</p>
+                 <p class="mb-4 pb-2">Moerbeke</p>
+              </li>
+
+              <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p>+ 32 0487 79 53 45</p>
+              </li>
+
+              <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                  <p>liiceth09@gmail.com
+                  </p>
+              </li>
+          </ul>
+      </div>
+      <!--Grid column-->
+
+</div>
+
+

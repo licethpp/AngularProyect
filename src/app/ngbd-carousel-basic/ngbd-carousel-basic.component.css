@@ -1,0 +1,69 @@
+
+    .image{
+        background-size:cover; 
+        background-image:url('../Imagen/pexels-alexy-almond-3756498.jpg');
+      
+      font-family: 'Lato', sans-serif;
+      width: 100% !important;
+      height: 50vh;
+      padding:0;
+      margin:0;
+      }
+      .image1{
+        background-size:cover; 
+        background-image:url('../Imagen/keso.jpg');
+        margin:  auto;
+      font-family: 'Lato', sans-serif;
+      width: 100% !important;
+      height: 50vh;
+      padding:0;
+      margin:0;
+
+      }
+      .image2{
+        background-size:cover; 
+        background-image:url('../Imagen/keso3.jpg');
+        margin:  auto;
+        font-family: 'Lato', sans-serif;
+        width: 100% !important;
+        height: 50vh;
+        padding:0;
+        margin:0;
+      }
+      h3{
+        text-align: center;
+        font: 1em sans-serif;
+        font-weight: 100;
+        font-size: 30px;
+        margin-top: 0px;
+    }
+    
+  
+    .carousel {
+      align-items: center;
+      position:relative;
+      overflow:hidden;
+      border-top: 3ch;
+      padding:0;
+      margin:auto;
+      width:640px;
+      height:360px;
+      align-self: center;
+}
+ 
+
+  .carousel-inner > .item > img {
+    width:640px;
+    height:460px;
+  }
+
+
+  @media screen and (max-width: 980px) {
+    .navbar a {
+      float: none; 
+      display: block;
+  
+    }
+  
+  }
+ 

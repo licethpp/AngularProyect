@@ -1,0 +1,63 @@
+<button type="button" class="btn btn-primary"  routerLink="/cheese" > Back to Cheese</button>
+
+<div>
+    <div *ngIf="cheese.id">
+          <h3>Cheese Detail</h3>
+        <div>
+    </div>
+    <br>
+<div class="col-md-8"  *ngIf="cheese.id" >
+    <div class="card mb-3">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-3">
+            <h6 class="mb-0">Id</h6>
+          </div>
+          <div class="col-sm-9 text-secondary">
+            <label></label> {{ cheese.id}}
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-3">
+            <h6 class="mb-0">Naam</h6>
+          </div>
+          <div class="col-sm-9 text-secondary">
+              <div>
+            <label></label>
+            {{ cheese.naam }}
+     </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-3">
+            <h6 class="mb-0">Soort</h6>
+          </div>
+          <div class="col-sm-9 text-secondary">
+            <label></label>
+            {{ cheese.soort }}     </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-3">
+            <h6 class="mb-0">Smaak</h6>
+          </div>
+          <div class="col-sm-9 text-secondary">
+            <label></label>
+            {{ cheese.smaak }} 
+          </div>
+        </div>
+        <hr>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <h6 class="mb-0">Price</h6>
+          </div>
+          <div class="col-sm-9 text-secondary">
+            <label></label>
+            {{ cheese.price }} 
+          </div>
+        </div>
+      
+      

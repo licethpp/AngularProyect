@@ -1,0 +1,19 @@
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of filterCartegory">
+            <div class="card col-md-3">
+                <img  src="data:image/jpeg;base64,{{item.pictureData}}" id="photo-id">  
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.naam}}</h5>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.smaak}}</p>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.soort}}</p>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.image}}</p>
+
+
+                <p><strong>Price:</strong> ${{item.price}}</p>
+                <button class="btn btn-primary" (click)=addtocart(item)>Add to cart</button>
+            </div>
+        </ng-container>
+
+    </div>
+</div>

@@ -1,0 +1,98 @@
+<button type="button" class="btn btn-primary"  routerLink="/cheese" > Back to Cheese</button>
+<h3>Add New Cheese</h3>
+
+<br>
+<div>
+    <div class="submit-form">
+      <div *ngIf="!submitted">
+       
+        <div class="form-group">
+          <label for="description">Naam</label>
+          <input
+            class="form-control"
+            id="naam"
+            required
+            [(ngModel)]="cheese.naam"
+            name="naam"
+          />
+        </div>
+        <div class="form-group">
+            <label for="description">Smaak</label>
+            <input
+              class="form-control"
+              id="smaak"
+              required
+              [(ngModel)]="cheese.smaak"
+              name="smaak"
+            />
+          </div>
+          <div class="form-group">
+            <label for="description">Soort</label>
+            <input
+              class="form-control"
+              id="soort"
+              required
+              [(ngModel)]="cheese.soort"
+              name="soort"
+            />
+          </div>
+          <div class="form-group">
+            <label for="description">Price </label>
+            <input
+              class="form-control"
+              id="price"
+              required
+              [(ngModel)]="cheese.price"
+              name="price"
+              type="number"
+            />
+          </div>
+          <!-- <div class="form-group">
+            <label for="description">Imagen</label>
+         <div class="row">
+            <div class="col-8">
+              <label class="btn btn-default p-0">
+                <input 
+                class="form-control"
+                id="pictureData"
+                required
+                [(ngModel)]="cheese.pictureData"
+                name="pictureData"
+                type="file" accept="image/*" (change)="selectFile($event)"  />
+              </label>
+            </div>
+           
+          </div>
+            
+          </div>  -->
+        
+         
+          <div>
+            <img [src]="preview" class="preview">
+          </div>
+          
+          <div *ngIf="currentFile && progress" class="progress my-3">
+            <div
+              class="progress-bar progress-bar-info"
+              role="progressbar"
+              attr.aria-valuenow="{{ progress }}"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              [ngStyle]="{ width: progress + '%' }">
+              {{ progress }}%
+            </div>
+          </div>
+          
+          <div *ngIf="message" class="alert alert-secondary" role="alert">
+            {{ message }}
+          </div>   
+
+        <button (click)="saveCheese()" class="btn btn-success">Submit</button>
+      </div>
+ <br>
+      <div *ngIf="submitted">
+        <h4>Cheese was submitted successfully!</h4>
+        <button class="btn btn-success" (click)="newCheese()">Add</button>
+      </div>
+    </div>
+  </div>

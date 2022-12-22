@@ -1,0 +1,18 @@
+.imagenContac{
+    background-image:url('../Imagen/azzedine-rouichi-YW_5rJvAdKw-unsplash.jpg');
+    height:20em; background-size:cover; 
+    width:100%;
+    background-size: cover; 
+    background-position: center center;
+}
+
+
+.contenedor{
+    align-content: center;
+    margin-top: auto;
+    display: flex;                  /* establish flex container */
+    flex-direction: row;            /* default value; can be omitted */
+    flex-wrap: nowrap;              /* default value; can be omitted */
+    justify-content: center;
+    padding: 2px; 
+}
