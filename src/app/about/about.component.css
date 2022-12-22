@@ -1,5 +1,6 @@
 
 .image{
+<<<<<<< HEAD
     background-image:url('../Imagen/pexels-pixabay-273214.jpg');
     height:30em; background-size:cover; 
     width:100%;
@@ -97,4 +98,27 @@ h4{
   flex-wrap: nowrap;              /* default value; can be omitted */
   justify-content: space-between;
   padding: 2px; /* switched from default (flex-start, see below) */
+=======
+background-image:url('../Imagen/pexels-pixabay-273214.jpg');  
+width: 300%;
+height:33em; background-size:cover; 
+float: left;
+margin-right: 15px;
+border-radius: 3px;
+  }
+
+  .about-section{
+    float: right;
+    margin-right: 15px;
+    align-items: center;
+
+ }
+    
+ .container {
+    display: flex;
+    justify-content: center;
+}
+p{
+    font-size: 23px;
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 }

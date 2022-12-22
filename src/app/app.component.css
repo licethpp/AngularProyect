@@ -1,0 +1,28 @@
+nav {
+    margin-bottom: 40px;
+   }
+   .btn btn-primary
+   {
+    float: right;
+   }
+   ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+  img{
+    width: 40px;
+  }
+  .bg-warning{
+    height: 33px;
+  }
+  .image{
+    height:3em; background-size:cover; 
+    background-image:url('../app/Imagen/kesoLogo.jpg');
+    background-position:50% 50%;
+
+    border-radius: 10px;
+    width: 100px;
+  height: 70px;
+  }

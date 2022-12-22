@@ -27,6 +27,7 @@
   </div>
 
 
+<<<<<<< HEAD
 <a class="btn btn-primary  " routerLink="/add">Add New Cheese</a>   
 
 <h3>Cheeses</h3>
@@ -35,6 +36,10 @@
   </h4> 
   
 </div> 
+=======
+<a class="btn btn-primary  " routerLink="/add">Add New Cheese</a>
+<h5>Cheeses</h5>
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 <br>
   <table class="table table-striped">
     <thead>
@@ -43,10 +48,13 @@
           <th>Naam</th>
           <th>soort</th>
           <th>smaak</th>
+<<<<<<< HEAD
           <th>price</th>
 
           
 
+=======
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
       </tr>
     </thead>
     <tbody>
@@ -55,6 +63,7 @@
         <td>{{dataItem.naam}}</td>
         <td>{{dataItem.soort}}</td>
         <td>{{dataItem.smaak}}</td>
+<<<<<<< HEAD
         <td>{{dataItem.price}}$</td>
 
 
@@ -71,6 +80,12 @@
  <button type="button" class="btn btn-danger deleteRow"    (click)="deleteChese(dataItem.id)">Delete </button>  
           
         
+=======
+
+        <td>
+          <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="EditCheese(dataItem)">Edit</button>
+            <button type="button" class="btn btn-danger" (click)="deleteChese(dataItem.id)">Delete</button>
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
             <button type="button" class="btn btn-info"  routerLink="/detail/{{ dataItem.id }}" (click)="getdetail"> Detail</button> 
         </td>
       </tr>

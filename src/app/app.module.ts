@@ -23,6 +23,7 @@ import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
 import { AboutComponent } from './about/about.component';
 import { NgbdCarouselBasicComponent } from './ngbd-carousel-basic/ngbd-carousel-basic.component';
+<<<<<<< HEAD
 import { CheckoutComponent } from './checkout/checkout.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductComponent } from './product/product.component';
@@ -34,6 +35,10 @@ import { ContactService } from './_services/contact.service';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { RequestResetPasswordComponent } from './request-reset-password/request-reset-password.component';
 import { ResponseResetComponentComponent } from './response-reset-component/response-reset-component.component';
+=======
+
+
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +55,7 @@ import { ResponseResetComponentComponent } from './response-reset-component/resp
     BoardAdminComponent,
     BoardModeratorComponent,
     AboutComponent,
+<<<<<<< HEAD
     NgbdCarouselBasicComponent,
     CheckoutComponent,
     CartComponent,
@@ -59,16 +65,25 @@ import { ResponseResetComponentComponent } from './response-reset-component/resp
     ForgotPasswordComponent,
     RequestResetPasswordComponent,
     ResponseResetComponentComponent
+=======
+    NgbdCarouselBasicComponent
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+<<<<<<< HEAD
     ReactiveFormsModule,
     FontAwesomeModule
   ],
   providers: [CheesesServiceService,authInterceptorProviders,CookieService,ContactService],
+=======
+    ReactiveFormsModule
+  ],
+  providers: [CheesesServiceService,authInterceptorProviders],
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
   bootstrap: [AppComponent]
 })
 export class AppModule { }

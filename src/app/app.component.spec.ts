@@ -3,6 +3,11 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({

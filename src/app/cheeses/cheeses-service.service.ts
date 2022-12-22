@@ -1,7 +1,12 @@
 import { Injectable } from '@angular/core';
+<<<<<<< HEAD
 import { HttpClient, HttpErrorResponse, HttpEvent, HttpHeaders, HttpRequest } from "@angular/common/http";
 import { catchError, map, Observable, pipe, retry, throwError } from "rxjs";
 import { Cheese } from '../models/cheese';
+=======
+import { HttpClient, HttpErrorResponse, HttpHeaders } from "@angular/common/http";
+import { catchError, map, Observable, pipe, retry, throwError } from "rxjs";
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +19,10 @@ export class CheesesServiceService {
 
   getAll(): Observable < any[] > {
     return this.http.get < any > (this.APIUrl);
+<<<<<<< HEAD
     
+=======
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 }
 
 /*getbyID(id:any):Observable <any[]>{
@@ -28,6 +36,7 @@ get(id: any): Observable<any> {
 
 
 createCheese(data: any): Observable<any[]> {
+<<<<<<< HEAD
  
   return this.http.post<any>(this.APIUrl, data);
 
@@ -69,6 +78,17 @@ uploadImage(file: File): Observable<HttpEvent<any>> {
       price:data.price,
       pictureData:data.pictureData
 
+=======
+  return this.http.post<any>(this.APIUrl, data);
+}
+
+  Updatecheese(data: any): Observable<any[]> {
+    return this.http.post<any>(this.APIUrl  + '/update',{
+      id: data.id,
+      naam: data.naam ,
+      soort:data.soort,
+      smaak:data.smaak
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
     })
   }
 
@@ -84,13 +104,21 @@ uploadImage(file: File): Observable<HttpEvent<any>> {
 
 
   deletecheese(id: number): Observable<unknown> {
+<<<<<<< HEAD
     const url = `${this.APIUrl}/${id}`; // DELETE 
+=======
+    const url = `${this.APIUrl}/${id}`; // DELETE api/heroes/42
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
     return this.http.delete(url, )
      
   }
  
 
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
     // Handle API errors
     handleError(error: HttpErrorResponse) {
       if (error.error instanceof ErrorEvent) {

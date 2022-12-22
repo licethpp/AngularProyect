@@ -1,12 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { Cheese } from '../models/cheese';
 import { CheesesServiceService } from '../cheeses/cheeses-service.service';
+<<<<<<< HEAD
 import { Observable } from 'rxjs';
 import { HttpEventType, HttpResponse } from '@angular/common/http';
+=======
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 
 @Component({
   selector: 'app-add',
   templateUrl: './add.component.html',
+<<<<<<< HEAD
   styleUrls: ['./add.component.css'],
 })
 
@@ -39,6 +43,23 @@ progress = 0;
   
   ngOnInit(): void {
    
+=======
+  styleUrls: ['./add.component.css']
+})
+export class AddComponent implements OnInit {
+  cheese: Cheese = {
+    id: 0,
+    naam: "",
+    soort: "" ,
+    smaak: ""
+  };
+  submitted = false;
+
+  constructor(private cheesesServiceService:CheesesServiceService) { }
+
+  ngOnInit(): void {
+
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
   }
 
 
@@ -47,6 +68,7 @@ progress = 0;
       id: this.cheese. id,
       naam: this.cheese. naam,
       soort: this.cheese.soort,
+<<<<<<< HEAD
       smaak: this.cheese.smaak,
       price: this.cheese.price,
       //pictureData:this.cheese.pictureData
@@ -63,11 +85,23 @@ progress = 0;
 
     /*this.cheesesServiceService.createCheese(data)
       .subscribe({next: (res) => {
+=======
+      smaak: this.cheese.smaak
+    };
+
+    this.cheesesServiceService.createCheese(data)
+      .subscribe({
+        next: (res) => {
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
           console.log(res);
           this.submitted = true;
         },
         error: (e) => console.error(e)
+<<<<<<< HEAD
       });*/
+=======
+      });
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
   }
 
   newCheese(): void {
@@ -76,6 +110,7 @@ progress = 0;
       id: 0,
       naam: '',
       soort: "" ,
+<<<<<<< HEAD
       smaak: "",
       price: 0.123456789,
       //pictureData :"$base64.encode(image)"
@@ -146,3 +181,11 @@ progress = 0;
   }
 }*/
 }
+=======
+      smaak: ""
+    };
+  }
+
+}
+
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d

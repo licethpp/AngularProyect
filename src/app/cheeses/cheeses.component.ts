@@ -1,6 +1,9 @@
 
 import { Component, Input, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { Decimal128, Number } from 'mongoose';
+=======
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 import { CheesesServiceService } from './cheeses-service.service';
 
 @Component({
@@ -16,6 +19,7 @@ export class CheesesComponent implements OnInit {
   naam: string ="";
   soort: string ="";
   smaak:string ="";
+<<<<<<< HEAD
   price:number = 0;
   pictureData=new FileReader();
   isSuccessful = false;
@@ -23,6 +27,10 @@ export class CheesesComponent implements OnInit {
   
   @Input()cheese:any;
  alert=false
+=======
+  @Input()cheese:any;
+
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 
   constructor(private cheesesServiceService:CheesesServiceService) { }
 
@@ -39,8 +47,11 @@ export class CheesesComponent implements OnInit {
     this.cheesesServiceService.Updatecheese(this.id).subscribe(data=>{
       this.cheese =data
   })
+<<<<<<< HEAD
   const reader = new FileReader();
 
+=======
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 }
 
   EditCheese(item: any){
@@ -59,12 +70,17 @@ export class CheesesComponent implements OnInit {
   }
 
   deleteChese(id:number){
+<<<<<<< HEAD
     
     this.cheesesServiceService.deletecheese(id).subscribe( data => {
       console.log(data);
       this.isSuccessful = true;
 
 
+=======
+    this.cheesesServiceService.deletecheese(id).subscribe( data => {
+      console.log(data);
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
     })
   }
   getdetail(id:any) {

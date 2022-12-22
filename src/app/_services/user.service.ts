@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+<<<<<<< HEAD
 import { HttpClient , HttpHeaders} from '@angular/common/http';
 import { map, Observable } from 'rxjs';
 import { CookieService } from "ngx-cookie-service";
@@ -9,10 +10,18 @@ const API_URL = 'https://localhost:5001/api/User';
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
+=======
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+const API_URL = 'https://localhost:44379/api/User';
+
+
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
+<<<<<<< HEAD
   createCompleteRoute(route: string, urlAddress: any): string {
     throw new Error('Method not implemented.');
   }
@@ -96,3 +105,17 @@ ValidPasswordToken(body: any): Observable<any> {
 }
 }
 
+=======
+
+  constructor(private http: HttpClient) { }
+
+  getUserBoard(): Observable<any> {
+    return this.http.get(API_URL , { responseType: 'text' });
+  }
+  
+
+  getPublicContent(id:number): Observable<any> {
+    return this.http.get(API_URL + '/'  + id,{ responseType: 'text' });
+  }
+}
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d

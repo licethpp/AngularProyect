@@ -9,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgbdCarouselBasicComponent implements OnInit {
 
+<<<<<<< HEAD
  
+=======
+  
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
   constructor() { }
 
   ngOnInit(): void {

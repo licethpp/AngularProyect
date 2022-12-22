@@ -12,6 +12,7 @@ import { BoardUserComponent } from './board-user/board-user.component';
 import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
 import { AboutComponent } from './about/about.component';
+<<<<<<< HEAD
 import { CheckoutComponent } from './checkout/checkout.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductComponent } from './product/product.component';
@@ -19,6 +20,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { RequestResetPasswordComponent } from './request-reset-password/request-reset-password.component';
 import { ResponseResetComponentComponent } from './response-reset-component/response-reset-component.component';
+=======
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 const routes: Routes = [
   {path:'home', component:StartComponent},
 
@@ -27,6 +30,7 @@ const routes: Routes = [
   {path:'detail/:id', component:DetailsComponent},
   {path:'add', component:AddComponent},
   {path:'about', component:AboutComponent},
+<<<<<<< HEAD
   {path:'contact', component:ContactComponent},
 
   {path:'checkout', component:CheckoutComponent},
@@ -35,18 +39,26 @@ const routes: Routes = [
 
 
 
+=======
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 
 
 
   { path: 'profile', component: ProfileComponent },
+<<<<<<< HEAD
   { path: 'forgotpassword', component: ForgotPasswordComponent },
+=======
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
   { path: 'user', component: BoardUserComponent },
   { path: 'mod', component: BoardModeratorComponent },
   { path: 'admin', component: BoardAdminComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+<<<<<<< HEAD
   { path: 'RequestResetPasswordComponent', component: RequestResetPasswordComponent },
   { path: 'ResetPassword/:email', component: ResponseResetComponentComponent },
+=======
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 

@@ -1,7 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+<<<<<<< HEAD
 import { ForgotPassword } from '../models/ForgotPasswordDto';
+=======
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 
 const AUTH_API = 'https://localhost:5001/api/User/login';
 const apiUrl='https://localhost:5001/api/User/Register';
@@ -30,6 +33,7 @@ export class AuthService {
 
     }, httpOptions);
   }
+<<<<<<< HEAD
   // Send forgot password email
   resetpassword(model: any) {
     return this.http.post(apiUrl + 'forgotpassword', model);
@@ -43,4 +47,6 @@ export class AuthService {
     return this.http.post(apiUrl + 'ResetPassword' + model + email, token);
   }
 
+=======
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 }

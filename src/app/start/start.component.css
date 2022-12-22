@@ -1,4 +1,15 @@
 
+<<<<<<< HEAD
+=======
+    .image{
+        height:40em; background-size:cover; 
+        background-image:url('../Imagen/pexels-alexy-almond-3756498.jpg');
+        background-position:50% 50%;
+        width: 100%;
+        
+        
+      }
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
       h3{
         text-align: center;
 
@@ -8,6 +19,7 @@
         font-weight: 100;
         font-size: 60px;
     }
+<<<<<<< HEAD
     .h1{
       text-align: center;
       color: whitesmoke;      
@@ -139,3 +151,11 @@ overflow: hidden;
   width:120%;
 }
 
+=======
+    
+    
+      .container {
+        display: flex;
+        justify-content: center;
+    }
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="container" *ngIf="currentUser">
     <header class="jumbotron">
       <h3>
@@ -7,11 +8,30 @@
      <p>
       <strong>Naam</strong>
       {{ currentUser }}
+=======
+<div class="container" *ngIf="currentUser; else loggedOut">
+    <header class="jumbotron">
+      <h3>
+        <strong>{{ currentUser.username }}</strong> Profile
+      </h3>
+    </header>
+    <p>
+      <strong>Token:</strong>
+      {{ currentUser.accessToken.substring(0, 20) }} ...
+      {{ currentUser.accessToken.substr(currentUser.accessToken.length - 20) }}
+    </p>
+    <p>
+      <strong>Email:</strong>
+      {{ currentUser.email }}
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
     </p>
    
   </div>
   
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
   <ng-template #loggedOut>
     Please login.
   </ng-template>

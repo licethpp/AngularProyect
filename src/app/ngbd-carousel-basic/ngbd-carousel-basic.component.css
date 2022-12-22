@@ -1,5 +1,6 @@
 
     .image{
+<<<<<<< HEAD
         background-size:cover; 
         background-image:url('../Imagen/pexels-alexy-almond-3756498.jpg');
       
@@ -67,3 +68,12 @@
   
   }
  
+=======
+        height:150em; background-size:cover; 
+        background-image:url('../Imagen/pexels-alexy-almond-3756498.jpg');
+        background-position:50% 50%;
+        width: 100%;
+        
+        
+      }
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d

@@ -19,7 +19,11 @@
             type="text"
             class="form-control"
             name="username"
+<<<<<<< HEAD
             [(ngModel)]="form.username "
+=======
+            [(ngModel)]="form.username"
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
             required
             #username="ngModel"
           />
@@ -40,7 +44,10 @@
           required
           minlength="6"
           #password="ngModel"
+<<<<<<< HEAD
           
+=======
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
         />
         <div
           class="alert alert-danger"
@@ -57,9 +64,12 @@
         Login
       </button>
     </div>
+<<<<<<< HEAD
     <div>
       <a routerLink="/RequestResetPasswordComponent"> Forgot Password </a>
     </div>
+=======
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
     <div class="form-group">
       <div
         class="alert alert-danger"
@@ -72,8 +82,12 @@
   </form>
 
   <div class="alert alert-success" *ngIf="isLoggedIn">
+<<<<<<< HEAD
     Logged in as  {{form.username }}
 
+=======
+    Logged in as {{ roles}}.
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
   </div>
 </div>
 </div>

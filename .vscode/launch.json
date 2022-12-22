@@ -2,10 +2,16 @@
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
+<<<<<<< HEAD
 
     {
       "type": "chrome",
       "name": "ng serve",
+=======
+    {
+      "name": "ng serve",
+      "type": "pwa-chrome",
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
       "request": "launch",
       "preLaunchTask": "npm: start",
       "url": "http://localhost:4200/"

@@ -2,7 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../_services/auth.service';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { validateNotEmpty } from 'validation-utils';
+<<<<<<< HEAD
 import { UserService } from '../_services/user.service';
+=======
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 
 @Component({
   selector: 'app-register',
@@ -20,8 +23,12 @@ export class RegisterComponent implements OnInit {
   isSignUpFailed = false;
   errorMessage = ''
 
+<<<<<<< HEAD
   constructor(private authService: AuthService, private userService:UserService,
     private formBuilder: FormBuilder) { }
+=======
+  constructor(private authService: AuthService,private formBuilder: FormBuilder) { }
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 
   ngOnInit(): void {
 
@@ -59,8 +66,11 @@ export class RegisterComponent implements OnInit {
     this.authService.register(username, email, password).subscribe(
       data => {
         console.log(data);
+<<<<<<< HEAD
         this.userService.setToken(data.token);
 
+=======
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
         this.isSuccessful = true;
         this.isSignUpFailed = false;
       },

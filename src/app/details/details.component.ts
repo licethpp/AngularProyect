@@ -14,12 +14,18 @@ export class DetailsComponent implements OnInit {
     id: 0,
     naam: "",
     soort: "" ,
+<<<<<<< HEAD
     smaak: "",
     price: 0.0,
     pictureData: "" 
   };
   message = '';
  
+=======
+    smaak: ""
+  };
+  message = '';
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 
   constructor(
     private cheesesServiceService: CheesesServiceService,
@@ -46,5 +52,9 @@ export class DetailsComponent implements OnInit {
         error: (e) => console.error(e)
       });
   }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 8f1de1435be29af79b5349515dfe4a309b7ee56d
 }
